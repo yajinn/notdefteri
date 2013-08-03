@@ -14,6 +14,14 @@ switch ($islem) {
         echo json_encode($sonuc);
         break;
 
+    case "notEkle":
+        $not->notEkle($baslik,$icerik,$yazar);
+        break;
+
+    case "notSil":
+        $not->notSil($notSilId);
+        break;
+
     case "uyeKontrol":
         $sonuc = $uye->uyeKontrol($email,$sifre);
         echo json_encode($sonuc);

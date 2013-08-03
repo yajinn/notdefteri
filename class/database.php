@@ -30,3 +30,6 @@ class database {
         return $sorgu->fetchAll(PDO::FETCH_BOTH);
     }
 }
+//$not = new database();
+//$not->ekle("INSERT INTO notlar(baslik,icerik,yazar) values(?,?,?)",array("Baslik","icerik","yaso"));
+

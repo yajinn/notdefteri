@@ -24,6 +24,38 @@ $(document).ready(function(){
         })
     });
 
+    $(".btn-NotEkle").click(function(){
+        $.ajax({
+            type :'POST',
+            url : 'ajax.php',
+            //dataType: 'json',
+            data:{
+                'islem' : "notEkle",
+                'baslik' : $("#notBaslik").val(),
+                'icerik' : $("#notIcerik").val(),
+                'yazar' :  $(".uye").text()
+            },
+            success :function(response){
+                console.log(response);
+                if(response!=false){
+                    $("#notBaslik").val("");
+                    $("#notIcerik").val("");
+                    location.reload();
+                }else{
+
+                }
+            }
+        });
+        return false;
+    });
+
+    $(".btn-NotSil").click(function(){
+        $.post("ajax.php",{islem:"notSil",notSilId:$(this).attr("data-not")},function(response){
+             console.log(response);
+            location.reload();
+        })
+    });
+
     $("#btn-giris").click(function(){
         $.ajax({
             type :'POST',
@@ -52,5 +84,7 @@ $(document).ready(function(){
         $.post("ajax.php",{islem:'uyeCikis'},function(response){
             location.reload();
         })
-    })
+    });
+
+
 });

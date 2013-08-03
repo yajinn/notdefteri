@@ -3,11 +3,11 @@
 class notlar extends database{
 
     public function notEkle($baslik,$icerik,$yazar){
-        $this->ekle("INSERT INTO notlar(baslik,icerik,yazar)",array($baslik,$icerik,$yazar));
+        $this->ekle("INSERT INTO notlar(baslik,icerik,yazar) values(?,?,?)",array($baslik,$icerik,$yazar));
         echo "Not eklendi!";
     }
     public function notSil($id){
-        $this->sil("DELETE from notlar where=?",array($id));
+        $this->sil("DELETE from notlar where id=?",array($id));
         echo "Not Silindi";
     }
     public function notGuncelle($baslik,$icerik,$yazar,$id){

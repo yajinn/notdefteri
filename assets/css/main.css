@@ -14,7 +14,14 @@
 }
 .yukleniyor .mesaj p{text-align: center}
 
-
+.w100{width: 100px; display: inline-block}
+.textarea{width: 510px;}
+.modal-body2{
+    position: relative;
+    max-height: 400px;
+    padding: 15px;
+    overflow-y: auto;
+}
 
 
 

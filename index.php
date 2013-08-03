@@ -39,6 +39,14 @@
                         <ul class="nav">
                             <li class="active"><a href="#">Notlar</a></li>
                             <li><a href="#hakkinda">Hakkında</a></li>
+                            <?php
+                                if($_SESSION['uye']!=""){
+                            ?>
+                            <li><a href="#notEkle" data-toggle="modal">Not Ekle</a></li>
+                            <?php
+                                }
+                            ?>
+
                             <!--
                             <li><a href="#contact">Contact</a></li>
                             <li class="dropdown">
@@ -108,9 +116,17 @@
                       foreach($sonuc as $satir){
                     ?>
                     <tr>
-                        <td><?=$satir['id']?></td>
                         <td>
-
+                            <?=$satir['id']?>
+                        </td>
+                        <td>
+                            <?php
+                            if($_SESSION['uye']){
+                            ?>
+                            <a  href="javascript:void(0)" data-not="<?=$satir['id']?>" class="btn btn-danger btn-NotSil">Sil</a>
+                            <?php
+                                }
+                            ?>
                             <a class="btn-NotDetay" href="#myModal" data-toggle="modal" data-id="<?=$satir['id']?>"><?=$satir['baslik']?></a>
 
                         </td>
@@ -139,6 +155,24 @@
             </div>
             <div class="modal-footer">
                 <button class="btn" data-dismiss="modal" aria-hidden="true">Kapat</button>
+            </div>
+        </div>
+        <!-- Modal Not Ekle -->
+        <div id="notEkle" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4>Not Ekle</h4>
+            </div>
+            <div class="modal-body2">
+                <div>
+                    <span class="w100">Not Başlık :</span> <input id="notBaslik" type="text" class="textarea"/>
+                </div>
+                <div>
+                    <span class="w100">Not : </span><textarea class="textarea" name="" id="notIcerik" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-NotEkle" data-dismiss="modal" aria-hidden="true">Kaydet</button>
             </div>
         </div>
         <!--yukleniyor-->
