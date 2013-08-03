@@ -1,0 +1,29 @@
+.yukleniyor{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    background: rgba(0,0,0,0.5);
+    top:0; left: 0;
+    z-index: 9999;
+}
+.yukleniyor .mesaj{
+    width: 220px;
+    height: 50px;
+    margin: 200px auto 0 auto;
+    background: #ffffff;
+}
+.yukleniyor .mesaj p{text-align: center}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
