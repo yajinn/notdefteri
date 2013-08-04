@@ -2,11 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="78f3d5a5-c654-48ac-8631-edde965463f2" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/ajax.php" afterPath="$PROJECT_DIR$/ajax.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/css/main.css" afterPath="$PROJECT_DIR$/assets/css/main.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/assets/js/main.js" afterPath="$PROJECT_DIR$/assets/js/main.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/class/uye.php" afterPath="$PROJECT_DIR$/class/uye.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/notdefteri.sql" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="notdefteri.iws" />
@@ -17,7 +13,7 @@
     <file path="/index.php" changelist="78f3d5a5-c654-48ac-8631-edde965463f2" time="1375616775569" ignored="false" />
     <file path="/main.js" changelist="78f3d5a5-c654-48ac-8631-edde965463f2" time="1375617069980" ignored="false" />
     <file path="/ajax.php" changelist="78f3d5a5-c654-48ac-8631-edde965463f2" time="1375615706820" ignored="false" />
-    <file path="/Dummy.txt" changelist="78f3d5a5-c654-48ac-8631-edde965463f2" time="1375601227029" ignored="false" />
+    <file path="/Dummy.txt" changelist="78f3d5a5-c654-48ac-8631-edde965463f2" time="1375617224336" ignored="false" />
     <file path="/main.css" changelist="78f3d5a5-c654-48ac-8631-edde965463f2" time="1375604564137" ignored="false" />
     <file path="/uye.php" changelist="78f3d5a5-c654-48ac-8631-edde965463f2" time="1375615114304" ignored="false" />
     <file path="/dummy.xml" changelist="78f3d5a5-c654-48ac-8631-edde965463f2" time="1374401362590" ignored="false" />
@@ -105,10 +101,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="main.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/assets/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="114" column="33" selection-start="3548" selection-end="3548" vertical-scroll-proportion="0.74727273">
+            <state line="117" column="7" selection-start="3567" selection-end="3567" vertical-scroll-proportion="0.0">
               <folding>
                 <element signature="e#789#1243#0" expanded="false" />
                 <element signature="e#2770#3471#0" expanded="false" />
@@ -116,6 +112,15 @@
                 <element signature="e#3827#4577#0" expanded="false" />
                 <element signature="e#4617#4731#0" expanded="false" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="notdefteri.sql" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/notdefteri.sql">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -283,10 +288,10 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\wamp\www\notdefteri" />
       <recent name="C:\wamp\www\notdefteri\assets\js" />
       <recent name="C:\wamp\www\notdefteri\assets\css" />
       <recent name="C:\wamp\www\notdefteri\assets\img" />
-      <recent name="C:\wamp\www\notdefteri" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\wamp\www\notdefteri\class" />
@@ -342,13 +347,18 @@
       <created>1375530371178</created>
       <updated>1375530371178</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="uye kayit, not güncelle">
+      <created>1375617227471</created>
+      <updated>1375617227471</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -363,7 +373,6 @@
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -411,7 +420,7 @@
     <option name="WRAP_WHEN_TYPING_REACHES_RIGHT_MARGIN" value="false" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="false" />
-    <option name="LAST_COMMIT_MESSAGE" value="not ekle, not sil" />
+    <option name="LAST_COMMIT_MESSAGE" value="uye kayit, not güncelle" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="false" />
     <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_FILES_UP_TO_DATE_BEFORE_COMMIT" value="false" />
@@ -428,6 +437,7 @@
     <MESSAGE value="readme" />
     <MESSAGE value="main.js" />
     <MESSAGE value="not ekle, not sil" />
+    <MESSAGE value="uye kayit, not güncelle" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -537,7 +547,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="114" column="33" selection-start="3548" selection-end="3548" vertical-scroll-proportion="0.74727273">
+        <state line="117" column="7" selection-start="3567" selection-end="3567" vertical-scroll-proportion="0.0">
           <folding>
             <element signature="e#789#1243#0" expanded="false" />
             <element signature="e#2770#3471#0" expanded="false" />
@@ -545,6 +555,13 @@
             <element signature="e#3827#4577#0" expanded="false" />
             <element signature="e#4617#4731#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/notdefteri.sql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
         </state>
       </provider>
     </entry>
