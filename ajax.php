@@ -9,7 +9,7 @@ $not = new notlar();
 $uye = new uye();
 switch ($islem) {
     case "notGoster":
-        sleep(1);
+        //sleep(1);
         $sonuc = $not->notCek($notID);
         echo json_encode($sonuc);
         break;
@@ -21,6 +21,9 @@ switch ($islem) {
     case "notSil":
         $not->notSil($notSilId);
         break;
+    case "notGuncelle":
+        $not->notGuncelle($baslik,$icerik,$yazar,$notId);
+        break;
 
     case "uyeKontrol":
         $sonuc = $uye->uyeKontrol($email,$sifre);
@@ -31,6 +34,10 @@ switch ($islem) {
         break;
     case "uyeCikis":
         session_destroy();
+        break;
+    case "uyeKayit":
+        //echo $ad." ".$soyad." ".$email." ".$sifre;
+        $uye->uyeKayit($ad,$soyad,$email,$sifre);
         break;
 }
 

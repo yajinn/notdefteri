@@ -6,4 +6,8 @@ class uye extends  database {
         return $sorgu;
     }
 
+    public function  uyeKayit($ad,$soyad,$email,$sifre){
+        $this->ekle("INSERT INTO uye(ad,soyad,email,sifre) values(?,?,?,?)",array($ad,$soyad,$email,$sifre));
+        echo "Uye Kayit edildi!";
+    }
  }

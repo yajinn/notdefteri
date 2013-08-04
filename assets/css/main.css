@@ -16,7 +16,7 @@
 
 .w100{width: 100px; display: inline-block}
 .textarea{width: 510px;}
-.modal-body2{
+.modal-body2,.modal-body3{
     position: relative;
     max-height: 400px;
     padding: 15px;

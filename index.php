@@ -44,8 +44,12 @@
                             ?>
                             <li><a href="#notEkle" data-toggle="modal">Not Ekle</a></li>
                             <?php
-                                }
+                                }else{
                             ?>
+                            <li><a href="#uyeOl" data-toggle="modal">Üye Ol</a></li>
+                            <?php
+                                }
+                             ?>
 
                             <!--
                             <li><a href="#contact">Contact</a></li>
@@ -124,6 +128,7 @@
                             if($_SESSION['uye']){
                             ?>
                             <a  href="javascript:void(0)" data-not="<?=$satir['id']?>" class="btn btn-danger btn-NotSil">Sil</a>
+                            <a  href="#notGuncelle" data-toggle="modal" data-not="<?=$satir['id']?>" class="btn btn-primary btn-Duzenle">Güncelle</a>
                             <?php
                                 }
                             ?>
@@ -175,6 +180,50 @@
                 <button class="btn btn-NotEkle" data-dismiss="modal" aria-hidden="true">Kaydet</button>
             </div>
         </div>
+        <!-- Modal Not Güncelle -->
+        <div id="notGuncelle" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4>Not Güncelle #<span id="duzenleId"></span></h4>
+            </div>
+            <div class="modal-body3">
+                <div>
+                    <span class="w100">Not Başlık :</span> <input id="notBaslikDuzenle" type="text" class="textarea"/>
+                </div>
+                <div>
+                    <span class="w100">Not : </span><textarea class="textarea" name="" id="notIcerikDuzenle" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-NotGuncelle" data-dismiss="modal" aria-hidden="true">Güncelle</button>
+            </div>
+        </div>
+        <!-- Modal Üye Ol -->
+        <div id="uyeOl" class="modal hide fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+                <h4>Üye Ol </h4>
+            </div>
+            <div class="modal-body3">
+                <form id="uyeKayitFrom">
+                <div>
+                    <span class="w100">Adınız :</span> <input id="ad" type="text" class="validate[required] textarea"/>
+                </div>
+                <div>
+                    <span class="w100">Soyadınız :</span> <input id="soyad" type="text" class="textarea"/>
+                </div>
+                <div>
+                    <span class="w100">E-mail :</span> <input id="emailKayit" type="text" class="textarea"/>
+                </div>
+                <div>
+                    <span class="w100">Şifre :</span> <input id="sifreKayit" type="password" class="textarea"/>
+                </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-UyeKayit" data-dismiss="modal" aria-hidden="true">Kayıt Ol</button>
+            </div>
+        </div>
         <!--yukleniyor-->
         <div class="yukleniyor" style="display: none;">
             <div class="mesaj">
@@ -182,7 +231,6 @@
                 <p>Yükleniyor...</p>
             </div>
         </div>
-
         <script src="assets/js/vendor/jquery-1.10.1.min.js"></script>
         <script src="assets/js/vendor/bootstrap.min.js"></script>
         <script src="assets/js/main.js"></script>
